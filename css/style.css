@@ -1,0 +1,345 @@
+
+@import url(libray.css);
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif;}
+
+body{color: #444444; font-size: 1rem; line-height: 1.5; background-color: #fff; }
+
+/* ---------------------------------------------------
+                      header bolmesi
+-----------------------------------------------------*/
+header {padding: 15px 0; z-index: 997; transition: all 0.5s ease; position: fixed; top: 0; left: 0; right: 0;
+       }
+header .container { max-width: 1320px; margin: 0 auto; padding: 10px 12px;}
+.logo_Arsha {font-size: 30px; line-height: 1; font-weight: 520;}
+.logo_Arsha > a{color: #fff; }
+/* ---------------------------------------------------
+                 nav link bolmesi
+-----------------------------------------------------*/
+nav {position: relative; }
+nav li {position: relative;}
+nav li a {color: #fff; padding: 10px 20px; font-size: 15px; font-weight: 500; transition: 0.3s ease;}
+.active {color: #47b2e4;}
+.dropdown > ul {display: block; position: absolute; left: 14px; z-index: 99;   background: #fff; 
+               box-shadow: 0px 0px 30px rgb(127 137 161 / 25%); border-radius: 4px; transition: 0.3s;
+                width: 150px; height: auto; display: none; padding: 10px 0;}
+.dropdown ul li{min-width: 200px;}
+nav li:hover > a {color: #47b2e4;}
+ .dropdown:hover ul {display: block; padding: 15px 0;}               
+.dropdown > ul li a{display: block; color: #0c3c53; padding-bottom: 5px;}
+.btn-getstarted {padding: 8px 20px; margin-left: 30px; border-radius: 50px; color: #fff; font-size: 14px;
+                border: 2px solid #47b2e4; font-weight: 600;}
+
+/* ---------------------------------------------------
+                 section hero bolmesi
+-----------------------------------------------------*/
+.hero {background-color: #37517E; }
+.hero_in{padding-top: 60px;}
+.hero_title{width: 50%; padding-top: 72px; padding-bottom: 60px;}
+.hero_in h1 { margin-bottom: 10px; font-size: 48px; font-weight: 700; line-height: 56px; color: #fff; }
+.hero_in h2 {color: rgba(255, 255, 255, 0.6); margin-bottom: 50px; font-size: 24px; font-weight: 500; }
+#btn_getstarted {font-weight: 500; font-size: 16px; display: inline-block; padding: 10px 28px 11px; letter-spacing: 1px;
+                 border-radius: 50px; transition: 0.5s;  color: #fff; background-color: #47b2e4;}
+#btn_getstarted:hover {background-color: #209dd8; }
+.btn_whatch_video { font-size: 16px; transition: 0.5s; color: #fff; margin-left: 25px;}
+.whacth_video_icon { font-size: 32px!important; transition: 0.3s; margin-right: 8px; color: #fff; }
+.hero_img_animation {position: relative; width: 50%;}
+.hero_img_animation > img{position: absolute; max-width: 100%; width: 100%; height: 100%; animation-name: up-down; 
+                     animation-iteration-count:infinite; animation-duration: 4s;
+                       animation-duration: alternate;}
+@keyframes up-down {0%{bottom: 0;} 100%{bottom: 20px;}  }
+
+
+/* ---------------------------------------------------
+                 section Cliens bolmesi
+-----------------------------------------------------*/
+.cliens{padding: 12px 0; text-align: center; background-color: #f3f5fa; overflow: hidden; }
+.cliens_in div{display: flex; justify-content: center; align-items: center; width: 16.6666666667%;  }
+.cliens_in div img{max-width: 45%; transition: all 0.4s ease; display: inline-block; padding: 15px 0; height: auto;}
+.cliens_in div img:hover{transform: scale(1.1); opacity: 1;}
+
+/* ---------------------------------------------------
+                 section About bolmesi
+-----------------------------------------------------*/
+
+.about_title {text-align: center; padding-bottom: 30px;  padding-left: 12px; padding-right: 12px;}
+.about_title h2{font-size: 32px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;
+                position: relative; color: #37517e; padding-bottom: 20px; display: inline-block; max-width: 250px;}
+.about_title h2::after {position: absolute; content: ''; left: 0; bottom: 0; width: 0; height: 3px;}
+.h2_after:hover::after{width: 100%; background-color: #f12711; transition: width 1s ease;}
+
+/* ---------------------About col left-------------- */
+.about_content {flex-wrap: wrap;}
+.about_content  div {width: 50%; padding: 0 12px;}
+.about_content p {padding-bottom: 16px;}
+.about_content ul {padding-bottom: 16px;}
+.about_content  ul  li {padding-left: 28px; position: relative; margin-top: 10px;}
+.check_icon {position:absolute; left: 0; top: 2px; font-size: 20px; color: #47b2e4; line-height: 1;}
+
+/* ---------------------About col right----------------- */
+.about_col_right p{margin-bottom: 16px;}
+.btn_learn_more {font-weight: 500; font-size: 14px; letter-spacing: 1px; display: inline-block; padding: 12px 32px;
+                 border-radius: 4px; transition: 0.3s; line-height: 1; color: #47b2e4; animation-delay: 0.8s;
+                 margin-top: 6px; border: 2px solid #47b2e4;}
+.btn_learn_more:hover {background-color: #47b2e4; color: #fff; }
+
+
+
+/* ---------------------------------------------------
+                 section About bolmesi
+-----------------------------------------------------*/
+.why_us {background: #f3f5fa;}
+.fluid_col_left{max-width: 60%; width: 60%; margin-right: 5px;}
+.fluid_content{padding: 60px 100px 0 100px;}
+.fluid_content h3 {font-weight: 400; font-size: 34px; color: #37517e;}
+.fluid_content p {font-size: 15px; color: #848484; margin-bottom: 16px; }
+.accordin_list {padding: 0 100px 60px 100px;}
+
+/* ------------------according bolmesi--------- */
+
+.accordin_list .container {border-radius: 4px; background-color: #fff; margin: 20px;}
+details > summary {list-style: none; padding: 20px; color: #47b2e4;}
+.accordin_list span{color: #47b2e4; font-weight: 600; font-size: 18px; padding-right: 10px;}
+.accordin_list p {padding-top: 10px; padding-left: 20px; background-color: rgb(221, 212, 212);}
+.icon_show{float: right; }
+
+/* -----------------col right img----------- */
+.fluid_col_right{width: 40%; margin-left: 5px;}
+.fluid_col_right > img{width: 100%;}
+
+
+
+/* ---------------------------------------------------
+                 section Skills bolmesi
+-----------------------------------------------------*/
+
+.skills_col_left,
+.skills_col_right {width: 50%; padding: 0 12px;}
+.skills_col_left > img {max-width: 100%; height: auto;}
+.skills_col_right h3 {display: inline-block; font-weight: 700; font-size: 32px; color: #37517e; margin-bottom: 8px;}
+.skills_col_right p {font-style: italic; margin-bottom: 1rem; }
+.progress_title {height: 23px; display: block; background: none; overflow: hidden; font-size: 12px; display: flex;
+          justify-content: space-between; border: none; }
+.progress_title span {margin-bottom: 6px; color: #37517e; font-weight: 600;  text-transform: uppercase;}
+.progress_in { outline: none; }
+.progress_bar {max-width: 100%; height: 10px; background-color: #4668a2; margin-bottom: 20px;}
+
+
+
+
+/* ---------------------------------------------------
+                 section Services bolmesi
+-----------------------------------------------------*/
+.services {background-color: #F3F5FA;}
+.services_title {text-align: center; padding-bottom: 30px;  padding-left: 12px; padding-right: 12px;}
+.services_title h2{font-size: 32px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;
+                position: relative; color: #37517e; padding-bottom: 20px; display: inline-block; max-width: 250px;}
+.services_title h2::after {position: absolute; content: ''; left: 0; bottom: 0; width: 0; height: 3px;}
+.h2_after:hover::after{width: 100%; background-color: #f12711; transition: width 1s ease;}
+.box {width: 25%; padding: 0 12px; }
+.box_in {padding: 50px 30px; text-align: left; transition: all ease-in-out 0.2s; background-color: #fff;}
+.box_in:hover { transform: translateY(-10px); box-shadow:  20px 20px 10px 10px  rgba(87, 81, 81, 0.6);}
+.icon_box {margin-bottom: 10px;}
+.icon_box .i {color: #47b2e4; font-size: 36px; }
+.box_in h4 { font-weight: 500; margin-bottom: 15px; font-size: 24px;}
+.box_in h4 a {color: #37517e; transition: all 0.3s ease; }
+.box_in p {line-height: 24px; font-size: 14px; opacity: 0.8;}
+
+
+/* ---------------------------------------------------
+                 section cta bolmesi
+-----------------------------------------------------*/
+
+.cta { background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+     url("./../img/cta-bg.jpg") fixed center center; background-size: cover; padding: 120px 0 ;}
+.cta_col_left,
+.cta_col_right {padding: 0 12px;}
+.cta_col_left {text-align: left; width: 75%;}
+.cta_col_right {width: 25%; text-align: center;}
+.cta h3 {color: #fff; font-size: 28px; margin-bottom: 0.5rem; line-height: 1.2;}
+.cta p {color: #fff; margin-bottom: 1rem; text-align: left;}
+.call_btn {font-weight: 500; font-size: 16px; letter-spacing: 1px; display: inline-block; padding: 12px 40px; 
+          border-radius: 50px; transition: 0.5s; margin: 10px; border: 2px solid #fff; color: #fff;}
+.call_btn:hover {background-color: #47b2e4; border: 2px solid #47b2e4; color: #fff;}
+
+
+/* ---------------------------------------------------
+                 section Portfolio bolmesi
+-----------------------------------------------------*/
+
+.portfolio_title {text-align: center; padding-bottom: 30px;  padding-left: 12px; padding-right: 12px;}
+.portfolio_title h2{font-size: 32px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;
+                position: relative; color: #37517e; padding-bottom: 20px; display: inline-block; max-width: 250px;}
+.portfolio_title h2::after {position: absolute; content: ''; left: 0; bottom: 0; width: 0; height: 3px;}
+.h2_after:hover::after{width: 100%; background-color: #f12711; transition: width 1s ease;}
+.portfolio_link {margin-bottom: 20px;}
+.All_btn {cursor: pointer; display: inline-block; margin: 10px 5px; padding: 8px 20px; font-size: 15px; line-height: 1;
+          transition: all 0.3s; border-radius: 50px; background-color: #209dd8; color: #fff;}
+.other_btn {cursor: pointer; display: inline-block; margin: 10px 5px; font-weight: 500; line-height: 1; font-size: 15px;
+         transform: all 0.3s ease; border-radius: 50px; padding: 8px 20px; }
+.other_btn:hover {background-color: #209dd8; color: #fff;}
+
+/* ---------------box group--------------- */
+
+.left_boxs,.center_boxs,
+.right_boxs {padding: 0 12px; width: 33.3333333333%;}
+.p_box{margin-bottom: 30px;}
+.p_box {height: auto; position: relative; overflow: hidden; }
+.p_box > img {max-width: 100%; height: auto; vertical-align: middle; transform: scale(1); transition: all 0.3s ease;}
+.p_box > img:hover {transform: scale(1.15);}
+.p_box:hover .portfolio_info {opacity: 1;}
+.portfolio_info {position: absolute; left: 0; right: 0; bottom: 0; z-index: 3;
+                 background: rgba(55, 81, 126, 0.8); padding: 10px 15px; opacity: 0; transition: all 0.4s ease;}
+.portfolio_info h4 {font-size: 18px; color: #fff; }
+.portfolio_info p {color: #f9fcfe; font-size: 14px; }
+.plus_link{position: absolute; right: 40px; bottom: 20px; color: #fff; transition: 0.3s;}
+.app_link {position: absolute; right: 15px; bottom: 20px; color: #fff; transition: 0.3s;}
+
+
+/* ---------------------------------------------------
+                 section team bolmesi
+-----------------------------------------------------*/
+.team {background-color: #F3F5FA;}
+.team_title {text-align: center; padding-bottom: 30px;  padding-left: 12px; padding-right: 12px;}
+.team_title h2{font-size: 32px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;
+                position: relative; color: #37517e; padding-bottom: 20px; display: inline-block; max-width: 250px;}
+.team_title h2::after {position: absolute; content: ''; left: 0; bottom: 0; width: 0; height: 3px;}
+.h2_after:hover::after{width: 100%; background-color: #f12711; transition: width 1s ease;}
+.team_col_left {width: 50%;}
+.team_col_right .box_in {margin: 0 12px;}
+.box_in {position: relative; padding: 30px; box-shadow: 0px 2px 15px rgb(0 0 0 / 10% ); transition: all 2s ease;
+          border-radius: 5px; background-color: #fff;}
+.team_col_left .box_in {margin: 0 12px;}
+.circle_img {overflow: hidden; border-radius: 50%; width: 180px;}
+.circle_img > img {max-width: 100%; height: 100%;}
+.member_info {padding-left: 30px; }
+.member_info h4 {font-weight: 700; margin-bottom: 5px; font-size: 20px; color: #37517e;}
+.member_info span {display: block; font-size: 15px; padding-bottom: 10px; position: relative; font-weight: 500;}
+.member_info span::after {content: ''; position:absolute; display: block; width: 50px; height: 1px; bottom: 0;
+                         left: 0; background-color: #cbd6e9; }
+.member_info p {margin-top: 10px; font-size: 14px; display: block;}
+.sosical{margin-top: 12px;}
+.sosical a {transition: all 0.4s ease; border-radius: 50px; width: 32px; height: 32px; background-color: #eff2f8;
+             display: flex; justify-content: center; align-items: center;}
+.s_i {color: #37517e; font-size: 16px; margin: 0 2px;}
+.sosical a:hover .s_i{color: #fff;}
+.sosical a:hover{background-color: #209dd8; }
+
+
+
+/* ---------------------------------------------------
+                 section Pricing bolmesi
+-----------------------------------------------------*/
+.pricing_title {text-align: center; padding-bottom: 30px;  padding-left: 12px; padding-right: 12px;}
+.pricing_title h2{font-size: 32px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;
+                position: relative; color: #37517e; padding-bottom: 20px; display: inline-block; max-width: 250px;}
+.pricing_title h2::after {position: absolute; content: ''; left: 0; bottom: 0; width: 0; height: 3px;}
+.h2_after:hover::after{width: 100%; background-color: #f12711; transition: width 1s ease;}
+.pricing_box_group{padding-top: 40px;}
+.pricing_box {width: 33.3333333333%; padding: 0 12px;}
+.pricing_box_in {padding: 60px 40px; box-shadow: 0 3px 20px -2px rgb(20 45 100 / 10%); background-color: #fff;
+               height: 100%; border-radius: 5px;}
+.pricing_box_in h3 {font-weight: 500; margin-bottom: 15px; font-size: 20px; color: #37517e;}
+.pricing_box_in h4 {font-size: 48px; color: #37517e; font-weight: 400; margin-bottom: 25px; }
+.pricing_box_in sup {font-size: 28px;}
+.pricing_box_in span {color: #47b2e4; font-size: 18px; display: block;}
+.pricing_box_in ul {padding: 20px 0; color: #999; text-align: left; line-height: 20px; margin-bottom: 1rem;}
+.pricing_box_in ul li {padding: 10px 0 10px 30px; position: relative; }
+.i_check{color: #28a745; font-size: 24px; position: absolute; left: 0; top: 6px;}
+.pricing_box_in a {display: inline-block; padding: 12px 35px; border-radius: 50px; font-size: 16px; font-weight: 500;
+                  transition: 0.3s ease; border: 1px solid #47b2e4;}
+.i_false {color: #ccc; font-size: 24px; position: absolute; left: 0; top: 6px;}
+.false {color: #ccc;}
+.c_btn {background-color: #47b2e4; color: #fff;}
+.c_btn:hover {background-color: #105677!important;}
+.pricing_box_in a:hover {background-color: #47b2e4; color: #fff;}
+
+
+
+/* ---------------------------------------------------
+                 section FAQ bolmesi
+-----------------------------------------------------*/
+.faq {background-color: #F3F5FA;}
+.faq_title {text-align: center; padding-bottom: 30px;  padding-left: 12px; padding-right: 12px;}
+.faq_title h2{font-size: 32px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;
+                position: relative; color: #37517e; padding-bottom: 20px; display: inline-block; }
+.faq_title h2::after {position: absolute; content: ''; left: 0; bottom: 0; width: 0; height: 3px;}
+
+
+/* ------------Burasi accordion bolmesidir------------- */
+.faq_accordion {max-width: 80%; margin: 0 auto 15px; border-radius: 5px; background-color: #fff; }
+.faq_accordion_title {justify-content: space-between; cursor: pointer; font-size: 18px; }
+.faq_title_p{display: inline-block; color: #105677; }
+.question_icon{font-size: 24px;}
+.unvisiblity {padding-left: 30px; background-color: #f7f9fc; border-top: 1px dotted; }
+
+
+/* ---------------------------------------------------
+                 section CONTACT bolmesi
+-----------------------------------------------------*/
+
+.contact_title {text-align: center; padding-bottom: 30px;  padding-left: 12px; padding-right: 12px;}
+.contact_title h2{font-size: 32px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;
+                position: relative; color: #37517e; padding-bottom: 20px; display: inline-block; }
+.contact_title h2::after {position: absolute; content: ''; left: 0; bottom: 0; width: 0; height: 3px;}
+
+/* -------------Burasi contact box bolmesidir----------- */
+.contact_col_left{width: 41.6666666667%; padding: 0 12px;}
+.contact_in_info {padding: 30px; border-top: 3px solid #47b2e4; border-bottom: 3px solid #47b2e4; 
+                 background-color: #fff; width: 100%; box-shadow: 0 0 24px 0 rgb(165, 159, 159); }
+.contact_col_right {padding: 0 12px; width: 59%; padding-top: 30px; }
+.contact_col_right_in {box-shadow: 0 0 24px 0 rgb(165, 159, 159); }
+.adress h4{padding-bottom: 5px; font-size: 22px; font-weight: 600; margin-bottom: 5px; 
+           color: #37517e;}
+.adress span {display: inline-block; width: 44px; height: 44px; border-radius: 50px; background-color: #d2e7f0;
+             display: flex; justify-content: center; align-items: center; transition: all 0.4s ease;}
+.adress span:hover {background-color: #209dd8; color: #fff;}
+.text { color: #47b2e4;}
+.adress span:hover .ic{color: #fff;}
+.ic {font-size: 20px; color: #209dd8}
+
+iframe{width: 100%; height: 290px;}
+
+/* ----------Bursi sag qutudur------ */
+
+.input_row div {width: 50%; margin-left: 10px;}
+#name,#email {width: 100%; height: 50px; }
+.input_Message {margin-left: 10px; margin-bottom: 20px;}
+#message {width: 100%; height: 270px;}
+.input_subject {margin-left: 10px;}
+#subject {width: 100%; height: 50px; }
+#submit {font-weight: 500; font-size: 16px; padding: 15px 25px; border-radius: 50px; transition: 0.5s ease;
+         color: #fff; background-color: #47b2e4;  border: none; }
+#submit:hover {cursor: pointer; background-color: #209dd8;}
+
+
+
+/* ---------------------------------------------------
+                 section FOOTER bolmesi
+-----------------------------------------------------*/
+footer {background-color: #37517e; font-size: 14px;}
+.footer_top {padding: 50px 0; background-color: #f3f5fa; text-align: center; font-size: 15px; color: #444444;}
+.footer_title {width: 50%; padding: 0 12px;}
+.footer_title h4 {font-size: 24px; margin-bottom: 20px; line-height: 1; font-weight: 600; color: #37517e;}
+.footer_title p {margin-bottom: 1rem; }
+.footer_title > form {margin-top: 10px; background-color: #fff; position: relative; border-radius: 50px; 
+                     text-align: left; box-shadow: 0px 2px 15px rgb(0 0 0 / 6%); }
+#footer_inp {padding: 10px 8px; width: calc(100% - 50px); border-radius:inherit; }
+#footer_sub {position: absolute; top: 0; right: 0; border: none; font-size: 16px; padding: 15px; background: #47b2e4;
+             color: #fff; transition: 0.3s ease; border-radius: inherit; box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+             margin-top: -5px;}
+.footer_box_group{padding-top: 60px;}
+.footer_box{width: 25%; padding: 0 12px; text-align: left; margin-bottom: 30px;}
+.footer_box h3 {font-size: 28px; margin-bottom: 10px; padding: 2px 0; line-height: 1; font-weight: 600; color: #37517e;}
+.footer_box p {font-size: 14px; line-height: 24px; color: #5e5e5e; opacity: 0.7;}
+.footer_box ul {padding-top: 10px;}
+.footer_box li {padding-bottom: 10px; opacity: 0.7;}
+.footer_box a {font-size: 18px; display: inline-block; background-color: #209dd8; color: #fff; line-height: 1; 
+               padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px;
+               transition: 0.3s ease;}
+.footer_box a:hover {background-color: #0a7cb1;}
+.footer_bottom {background-color: #37517e;}
+.footer_bottom_in {height: 100px; justify-content: space-between; align-items: center;}
+.footer_bottom_in div {height: 20px; color: #fff;}
+.go_up{display: block; background-color: #0a7cb1; position: relative;}
+.up_icon {position: fixed; right: 50px; bottom: 10px; font-size: 2.5rem; 
+           color: white; background-color: #47b2e4; border-radius: 50px;}
